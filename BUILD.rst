@@ -43,6 +43,8 @@ Please see the following sections for OS-specific instructions:
 * `MacOS`_
 
 * `Ubuntu`_
+
+* `Fedora`_
   
 -----------------
 Microsoft Windows
@@ -169,3 +171,33 @@ work on Ubuntu 18.04 and higher::
   cd pygame
   python3 setup.py -config -auto
   python3 setup.py build install --user
+
+------
+Fedora
+------
+
+Note: This procedure has been tested with Fedora 39. Build succeeds, but tests crash.
+
+1. Make sure the rpmfusion-free repository has been added (so we can add RPM Sphere repository)::
+     sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+
+   See the `RPM Fusion docs`_ for additional information.
+
+2. Install the rpmsphere-release package to add the RPM Sphere repository (so we can install smpeg-devel)::
+     sudo dnf install https://github.com/rpmsphere/noarch/raw/master/r/rpmsphere-release-38-1.noarch.rpm
+
+   See `pkgs.org`_ and `RPM Sphere`_ for more information.
+
+3. Install pygame dependencies::
+     sudo yum install python-devel SDL_image-devel SDL_mixer-devel SDL_ttf-devel SDL-devel smpeg-devel numpy subversion portmidi-devel gcc SDL2-devel dpkg-dev freetype-devel SDL2_ttf-devel SDL2_image-devel SDL2_mixer-devellibjpeg-turbo-devel
+     pip install cython
+
+5. Clone and build pygame::
+     git clone https://github.com/pygame/pygame.git
+     cd pygame
+     python3 setup.py -config -auto
+     python3 setup.py build install --user     
+
+.. _RPM Fusion docs: https://rpmfusion.org/Configuration
+.. _pkgs.org: https://pkgs.org/download/smpeg-devel
+.. _RPM Sphere: https://rpmsphere.github.io/
