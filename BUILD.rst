@@ -90,16 +90,16 @@ Here is the `pygame github repo`_ where the code lives.
 Run the pygame install commands
 ===============================
 
- In the Developer Command Prompt for visual studio use::
+In the Developer Command Prompt for visual studio use::
 
-   set DISTUTILS_USE_SDK=1
-   set MSSdk=1
-   git clone https://github.com/pygame/pygame.git
-   cd pygame
-   py -m pip install setuptools requests wheel numpy -U
-   py -m buildconfig --download
-   py -m pip install .
-   py -m pygame.examples.aliens
+  set DISTUTILS_USE_SDK=1
+  set MSSdk=1
+  git clone https://github.com/pygame/pygame.git
+  cd pygame
+  py -m pip install setuptools requests wheel numpy -U
+  py -m buildconfig --download
+  py -m pip install .
+  py -m pygame.examples.aliens
 
 More information
 ================
@@ -131,14 +131,14 @@ These should work on both x86_64 and arm64 macs, running MacOS 10 and above
      
 4. Install portmidi.
 
-    This step is definitely optional, and may fail on your system (it
-    fails on mine). If you don't run this, or it fails, pygame.midi
-    won't work, which is fine for most people. (step 5, testing, will
-    tell you if this worked or not).
+   This step is definitely optional, and may fail on your system (it
+   fails on mine). If you don't run this, or it fails, pygame.midi
+   won't work, which is fine for most people. (step 5, testing, will
+   tell you if this worked or not).
 
-    ::
+   ::
        
-       brew install portmidi
+      brew install portmidi
        
 5. Install latest Pygame from source::
      
