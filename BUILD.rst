@@ -100,9 +100,9 @@ Run the pygame install commands
    py -m buildconfig --download
    py -m pip install .
    py -m pygame.examples.aliens
- 
- More information
- ================
+
+More information
+================
 
 * `pypy windows compilers page`_
 
@@ -122,9 +122,13 @@ These should work on both x86_64 and arm64 macs, running MacOS 10 and above
 
 1. Install `Homebrew`_ — instructions found on link.
 2. Install SDL dependencies::
+     
      brew install sdl2 sdl2_image sdl2_mixer sdl2_ttf pkg-config
+     
 3. Install XQuartz [Seems to be optional]::
+     
      brew install Caskroom/cask/xquartz
+     
 4. Install portmidi.
 
     This step is definitely optional, and may fail on your system (it
@@ -133,12 +137,19 @@ These should work on both x86_64 and arm64 macs, running MacOS 10 and above
     tell you if this worked or not).
 
     ::
+       
        brew install portmidi
+       
 5. Install latest Pygame from source::
+     
      python3 -m pip install git+https://github.com/pygame/pygame.git
+     
 6. Verify all Pygame Tests::
+     
      python3 -m pygame.tests
 
+.. _Homebrew: https://brew.sh/
+     
 ------
 Ubuntu
 ------
