@@ -36,8 +36,14 @@ involve compiling and installing all the pygame dependencies.  Once
 that is done, run the ``setup.py`` script which will attempt to
 auto-configure, build, and install pygame.
 
-See below for OS-specific instructions.
+Please see the following sections for OS-specific instructions:
 
+* `Microsoft Windows`_
+
+* `MacOS`_
+
+* `Ubuntu`_
+  
 -----------------
 Microsoft Windows
 -----------------
