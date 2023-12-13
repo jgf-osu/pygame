@@ -43,6 +43,8 @@ Please see the following sections for OS-specific instructions:
 * `MacOS`_
 
 * `Ubuntu`_
+
+* `Fedora`_
   
 -----------------
 Microsoft Windows
