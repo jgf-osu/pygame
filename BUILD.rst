@@ -192,7 +192,7 @@ Note: This procedure has been tested with Fedora 39.
 
 3. Install pygame dependencies::
 
-     sudo yum install python-devel SDL_image-devel SDL_mixer-devel SDL_ttf-devel SDL-devel smpeg-devel numpy subversion portmidi-devel gcc SDL2-devel dpkg-dev freetype-devel SDL2_ttf-devel SDL2_image-devel SDL2_mixer-devellibjpeg-turbo-devel
+     sudo yum install python-devel SDL_image-devel SDL_mixer-devel SDL_ttf-devel SDL-devel smpeg-devel numpy subversion portmidi-devel gcc SDL2-devel dpkg-dev freetype-devel SDL2_ttf-devel SDL2_image-devel SDL2_mixer-devel libjpeg-turbo-devel
      pip install cython
 
 4. Clone and build pygame::
