@@ -36,7 +36,21 @@ involve compiling and installing all the pygame dependencies.  Once
 that is done, run the ``setup.py`` script which will attempt to
 auto-configure, build, and install pygame.
 
-Please see the following sections for OS-specific instructions:
+========================
+Compiling pygame on PyPy
+========================
+
+Compiling pygame on PyPy is pretty straight forward, just follow the
+regular compilation instructions for your platform, replacing any
+`python` / `python3` commands with `pypy` / `pypy3` and `pip` / `pip3`
+commands with `pypy -m pip` / `pypy3 -m pip` respectively.
+
+PyPy has to be installed for this to work, and it can be downloaded
+from here or any package manager you prefer.
+
+==================
+OS-specific guides
+==================
 
 * `Microsoft Windows`_
 
@@ -45,7 +59,7 @@ Please see the following sections for OS-specific instructions:
 * `Ubuntu`_
 
 * `Fedora`_
-  
+
 -----------------
 Microsoft Windows
 -----------------
