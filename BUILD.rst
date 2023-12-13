@@ -195,14 +195,14 @@ Fedora
 
 Note: This procedure has been tested with Fedora 39.
 
-1. Make sure the rpmfusion-free repository has been added (so we can
+1. Make sure the ``rpmfusion-free-release`` repository has been added (so we can
    add RPM Sphere repository)::
 
      sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
    See the `RPM Fusion docs`_ for additional information.
 
-2. Install the rpmsphere-release package to add the RPM Sphere
+2. Install the ``rpmsphere-release`` package to add the RPM Sphere
    repository (so we can install ``smpeg-devel``)::
 
      sudo dnf install https://github.com/rpmsphere/noarch/raw/master/r/rpmsphere-release-38-1.noarch.rpm
@@ -211,8 +211,7 @@ Note: This procedure has been tested with Fedora 39.
 
 3. Install pygame dependencies::
 
-     sudo yum install python-devel SDL_image-devel SDL_mixer-devel SDL_ttf-devel SDL-devel smpeg-devel numpy subversion portmidi-devel gcc SDL2-devel dpkg-dev freetype-devel SDL2_ttf-devel SDL2_image-devel SDL2_mixer-devel libjpeg-turbo-devel
-     pip install cython
+     sudo yum install python-devel python3-cython numpy gcc dpkg-dev SDL2_image-devel SDL2_mixer-devel SDL2_ttf-devel SDL2-devel freetype-devel libjpeg-turbo-devel smpeg-devel portmidi-devel
 
 4. Clone and build pygame::
 
