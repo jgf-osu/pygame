@@ -42,11 +42,14 @@ Compiling pygame on PyPy
 
 Compiling pygame on PyPy is pretty straight forward, just follow the
 regular compilation instructions for your platform, replacing any
-`python` / `python3` commands with `pypy` / `pypy3` and `pip` / `pip3`
-commands with `pypy -m pip` / `pypy3 -m pip` respectively.
+``python`` / ``python3`` commands with ``pypy`` / ``pypy3`` and
+``pip`` / ``pip3`` commands with ``pypy -m pip`` / ``pypy3 -m pip``
+respectively.
 
 PyPy has to be installed for this to work, and it can be downloaded
-from here or any package manager you prefer.
+from `here`_ or any package manager you prefer.
+
+.. _here: https://www.pypy.org/download.html
 
 ==================
 OS-specific guides
@@ -200,7 +203,7 @@ Note: This procedure has been tested with Fedora 39.
    See the `RPM Fusion docs`_ for additional information.
 
 2. Install the rpmsphere-release package to add the RPM Sphere
-   repository (so we can install smpeg-devel)::
+   repository (so we can install ``smpeg-devel``)::
 
      sudo dnf install https://github.com/rpmsphere/noarch/raw/master/r/rpmsphere-release-38-1.noarch.rpm
 
